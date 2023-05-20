@@ -1,19 +1,6 @@
 import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
-import { mockTransactions } from "../../data/mockData";
-import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
-import EmailIcon from "@mui/icons-material/Email";
-import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
-import PersonAddIcon from "@mui/icons-material/PersonAdd";
-import TrafficIcon from "@mui/icons-material/Traffic";
-import Header from "../../components/Header";
-import LineChart from "../../components/LineChart";
-import GeographyChart from "../../components/GeographyChart";
-import BarChart from "../../components/BarChart";
-import StatBox from "../../components/StatBox";
-import ProgressCircle from "../../components/ProgressCircle";
-import HeatPumpRounded from "@mui/icons-material/HeatPumpRounded"
-import { AirOutlined, Circle, DocumentScanner, HeartBroken, Image, MedicalInformation, Pause, PauseRounded, Pin, PinDrop, RectangleRounded, Screenshot, ScreenshotMonitor, Stream, Tag } from "@mui/icons-material";
+import { AirOutlined, Circle, DocumentScanner, HeartBroken, Image, MedicalInformation, PinDrop, RectangleRounded, Stream, Tag } from "@mui/icons-material";
 
 
 const Dashboard = () => {
@@ -23,33 +10,13 @@ const Dashboard = () => {
   return (
     <>
       <Box m="20px">
-        {/* HEADER */}
-        {/* <Header title="DASHBOARD" subtitle="Welcome to your dashboard" /> */}
-        {/* <Box display="flex" justifyContent="space-between" alignItems="center">
 
-        <Box>
-          <Button
-            sx={{
-              backgroundColor: colors.blueAccent[700],
-              color: colors.grey[100],
-              fontSize: "14px",
-              fontWeight: "bold",
-              padding: "10px 20px",
-            }}
-          >
-            <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-            Download Reports
-          </Button>
-        </Box>
-      </Box> */}
-
-        {/* GRID & CHARTS */}
         <Box
           display="grid"
           gridTemplateColumns="repeat(12, 1fr)"
           // gridAutoRows="auto"
           // gridAutoRows="320px"
-          gridAutoRows="20rem"
+          gridAutoRows="21.9rem"
           gap="5px"
         >
 
@@ -66,7 +33,6 @@ const Dashboard = () => {
               display="flex"
               justifyContent="space-between"
               alignItems="center"
-              // borderBottom={`4px solid ${colors.primary[500]}`}
               colors={colors.grey[100]}
               p="15px"
             >
@@ -769,7 +735,10 @@ const Dashboard = () => {
 
 
 
-          <Box
+          
+        </Box>
+
+        <Box
             gridColumn="span 12"
             gridRow="span 10"
             position="absolute"
@@ -783,7 +752,8 @@ const Dashboard = () => {
               bottom: -0,
               zIndex: 9,
               height: "100px",
-              width: "89vw",
+              // width: "89vw",
+              width: "92%",
               // flex:1,
             }}
           >
@@ -870,7 +840,6 @@ const Dashboard = () => {
             </Box>
 
           </Box>
-        </Box>
 
 
 
